@@ -50,7 +50,7 @@ def bubble_sort(a_list):
                 temp = a_list[i]
                 a_list[i] = a_list[i+1]
                 a_list[i+1] = temp
-                                                                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                        
 def short_bubble_sort(a_list):
     pairs = len(a_list) - 1
     exchange = True
@@ -65,7 +65,7 @@ def short_bubble_sort(a_list):
                 a_list[i+1] = temp
         
         pairs -= 1
-             
+                   
 def selection_sort(a_list):
     for i in range(len(a_list)):
         current_min = i
@@ -78,7 +78,7 @@ def selection_sort(a_list):
             temp = a_list[i]
             a_list[i] = a_list[current_min]
             a_list[current_min] = temp
-                                                                                                             
+                                                                                                            
 def insertion_sort(a_list):
     for i in range(1, len(a_list)):
         current = a_list[i]
@@ -89,7 +89,7 @@ def insertion_sort(a_list):
             pos -= 1
     
         a_list[pos] = current
-                              
+                        
 def shell_sort(a_list):
     sublistcount = len(a_list)//2
     
@@ -100,7 +100,7 @@ def shell_sort(a_list):
             
         print('After increment of size', sublistcount, 'The list is', a_list)
         sublistcount//=2
-                
+        
 def gapInsertionSort(a_list, start, gap):
     for i in range(start+gap, len(a_list), gap):
         current = a_list[i]
@@ -117,7 +117,7 @@ class Node():
     def __init__(self, item):
         self.data = item
         self.next = None
-        
+    
     def get_data(self):
         return self.data
     
@@ -129,22 +129,22 @@ class Node():
     
     def set_next(self, item):
         self.next = item
-                                                
+                                                     
 class LinkedList():
     
     def __init__(self):
         self.head = None
-                                   
+                                    
     # isEmpty(): tests to see whether the list is empty. It needs no parameters and returns a boolean value.                                    
     def is_empty(self):
         return self.head == None
-    
+        
     # add(item): adds a new item to the list. It needs the item and returns nothing. Assume the item is not already in the list.
     def add(self, item):
         temp = Node(item)
         temp.set_next(self.head)
         self.head = temp
-                                                         
+                                                                
     # append(item): adds a new item to the end of the list making it the last item in the collection. It needs the item and returns nothing. Assume the item is not already in the list.             
     def append(self, item):
         current = self.head
@@ -156,7 +156,7 @@ class LinkedList():
             current.set_next(Node(item))
         else:
             self.head = Node(item)
-                                                                             
+                                                                                                    
     # insert(pos,item): adds a new item to the list at position pos. It needs the item and returns nothing. Assume the item is not already in the list and there are enough existing items to have position pos.      
     def insert(self, pos, item):
         count = 0
@@ -173,7 +173,7 @@ class LinkedList():
                 current = current.get_next()
             temp.set_next(current)
             previous.set_next(temp)
-                                         
+                                                 
     # size(): returns the number of items in the list. It needs no parameters and returns an integer.                             
     def size(self):
         count = 0
@@ -184,7 +184,7 @@ class LinkedList():
             current = current.get_next()
         
         return count
-        
+    
     # search(self, item): searches for the item in the list. It needs the item and returns a boolean value.                                                  
     def search(self, item):
         current = self.head
@@ -197,7 +197,7 @@ class LinkedList():
                 current = current.get_next()
         
         return found
-                        
+            
     # index(self, item): returns the position of item in the list. It needs the item and returns the index. Assume the item is in the list.
     def index(self, item):
         count = 0
@@ -212,8 +212,8 @@ class LinkedList():
                 count += 1
                 current = current.get_next()
         
-        return -1      
-    
+        return -1
+        
     # index type II          
     def index(self, item):
         count = 0
@@ -226,7 +226,7 @@ class LinkedList():
                 count += 1
                 current = current.get_next()
         
-        return -1                    
+        return -1             
     
     # remove(self, item): removes the item from the list.                                                                        
     def remove(self, item):
@@ -247,7 +247,7 @@ class LinkedList():
                 previous.set_next(current.get_next())
         else:
             pass
-                                                  
+                                                   
     # pop(self): removes and returns the last item in the list. It needs nothing and returns an item. Assume the list has at least one item.                                           
     def pop(self):
         current = self.head
@@ -260,9 +260,9 @@ class LinkedList():
                 previous = current
                 current = current.get_next()
             previous.set_next(None)
-            
-        return current.get_data()
         
+        return current.get_data()
+       
     # poppos(self, pos): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.              
     def pospop(self, pos):
         count = 0
@@ -277,7 +277,7 @@ class LinkedList():
                 previous = current
                 current = current.get_next()
             previous.set_next(current.get_next())
-            
+        
         return current.get_data()
         
 mylist = LinkedList()
