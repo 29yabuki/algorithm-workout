@@ -111,7 +111,8 @@ def gapInsertionSort(a_list, start, gap):
             pos -= gap
         
         a_list[pos] = current
-       
+
+
 class Node():
     
     def __init__(self, item):
