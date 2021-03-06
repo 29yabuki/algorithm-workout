@@ -54,7 +54,7 @@ def bubble_sort(a_list):
                 a_list[i] = a_list[i+1]
                 a_list[i+1] = temp
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          
+
 def short_bubble_sort(a_list):
     pairs = len(a_list) - 1
     exchange = True
@@ -84,7 +84,7 @@ def selection_sort(a_list):
             a_list[i] = a_list[current_min]
             a_list[current_min] = temp
 
-                                                                                                                                         
+
 def insertion_sort(a_list):
     for i in range(1, len(a_list)):
         current = a_list[i]
@@ -139,7 +139,7 @@ class Node():
     def set_next(self, item):
         self.next = item
 
-                   
+
 class LinkedList():
     
     def __init__(self):
@@ -236,7 +236,7 @@ class LinkedList():
                 count += 1
                 current = current.get_next()
         
-        return -1             
+        return -1
 
     # remove(self, item): removes the item from the list.                                                                        
     def remove(self, item):
