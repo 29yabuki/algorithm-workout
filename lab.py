@@ -98,16 +98,15 @@ def insertion_sort(a_list):
 
 
 def shell_sort(a_list):
-    sublistcount = len(a_list)//2
+    sublistcount = len(a_list) // 2
     
     while sublistcount:
         
         for startpos in range(sublistcount):
             gapInsertionSort(a_list, startpos, sublistcount)
-        
-        print('After increment of size', sublistcount, 'The list is', a_list)
-        sublistcount//=2
 
+        print('After increment of size', sublistcount, 'The list is', a_list)
+        sublistcount //= 2
 
 def gapInsertionSort(a_list, start, gap):
     for i in range(start+gap, len(a_list), gap):
