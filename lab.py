@@ -108,6 +108,7 @@ def shell_sort(a_list):
         print('After increment of size', sublistcount, 'The list is', a_list)
         sublistcount //= 2
 
+
 def gapInsertionSort(a_list, start, gap):
     for i in range(start+gap, len(a_list), gap):
         current = a_list[i]
@@ -183,6 +184,21 @@ class LinkedList():
             temp.set_next(current)
             previous.set_next(temp)
 
+    def insert(self, pos, item):
+        count = 0
+        temp = Node(item)
+        previous = None
+        current = self.head
+        
+        if pos == 0:
+            self.add(item)
+        else:
+            while count < pos:
+                count += 1
+                previous = current
+                current = current.get_next()
+            temp.set_next(current)
+            previous.set_next(current)
     # size(): returns the number of items in the list. It needs no parameters and returns an integer.                             
     def size(self):
         count = 0
