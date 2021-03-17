@@ -184,21 +184,6 @@ class LinkedList():
             temp.set_next(current)
             previous.set_next(temp)
 
-    def insert(self, pos, item):
-        count = 0
-        temp = Node(item)
-        previous = None
-        current = self.head
-        
-        if pos == 0:
-            self.add(item)
-        else:
-            while count < pos:
-                count += 1
-                previous = current
-                current = current.get_next()
-            temp.set_next(current)
-            previous.set_next(current)
     # size(): returns the number of items in the list. It needs no parameters and returns an integer.                             
     def size(self):
         count = 0
