@@ -34,7 +34,7 @@ def binary_search(a_list, item):
     found = False
     
     while first <= last and not found:
-        midpoint = (first+last)//2
+        midpoint = (first+last) // 2
         if a_list[midpoint] == item:
             found = True
         else:
