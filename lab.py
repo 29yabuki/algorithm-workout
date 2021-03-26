@@ -42,7 +42,7 @@ def binary_search(a_list, item):
                 last = midpoint - 1
             else:
                 first = midpoint + 1
-                
+    
     return found
 
 
@@ -93,7 +93,7 @@ def insertion_sort(a_list):
         while pos > 0 and a_list[pos-1] > current:
             a_list[pos] = a_list[pos-1]
             pos -= 1
-
+        
         a_list[pos] = current
 
 
