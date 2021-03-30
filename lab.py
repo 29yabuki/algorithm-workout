@@ -104,7 +104,7 @@ def shell_sort(a_list):
         
         for startpos in range(sublistcount):
             gap_insertion_sort(a_list, startpos, sublistcount)
-
+        
         print('After increment of size', sublistcount, 'The list is', a_list)
         sublistcount //= 2
 
