@@ -78,7 +78,7 @@ def selection_sort(a_list):
         for j in range(i+1, len(a_list)):
             if a_list[j] < a_list[current_min]:
                 current_min = j
-
+        
         if current_min != i:
             temp = a_list[i]
             a_list[i] = a_list[current_min]
