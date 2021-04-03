@@ -122,7 +122,6 @@ def gap_insertion_sort(a_list, start, gap):
 
 
 class Node():
-    
     def __init__(self, item):
         self.data = item
         self.next = None
@@ -141,7 +140,6 @@ class Node():
 
 
 class LinkedList():
-    
     def __init__(self):
         self.head = None
 
@@ -289,6 +287,7 @@ class LinkedList():
             previous.set_next(current.get_next())
         
         return current.get_data()
+
 
 mylist = LinkedList()
 mylist.add(3)
