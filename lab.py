@@ -101,7 +101,6 @@ def shell_sort(a_list):
     sublistcount = len(a_list) // 2
     
     while sublistcount:
-        
         for startpos in range(sublistcount):
             gap_insertion_sort(a_list, startpos, sublistcount)
         
@@ -272,7 +271,7 @@ class LinkedList():
         return current.get_data()
 
     # poppos(self, pos): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.              
-    def pospop(self, pos):
+    def pospop(self, pos=0):
         count = 0
         current = self.head
         previous = None
