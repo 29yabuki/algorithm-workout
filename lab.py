@@ -288,6 +288,28 @@ class LinkedList():
         return current.get_data()
 
 
+class PythonicNode():
+    def __init__(self, item):
+        self.data = item
+        self.next = None
+    
+    @property
+    def data(self):
+        return self.data
+    
+    @data.setter
+    def data(self, item):
+        self.data = item
+    
+    @property
+    def next(self):
+        return self.next
+    
+    @next.setter
+    def next(self, item):
+        self.next = item
+
+
 mylist = LinkedList()
 mylist.add(3)
 mylist.add(4)
