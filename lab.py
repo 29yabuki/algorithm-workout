@@ -120,7 +120,7 @@ def gap_insertion_sort(a_list, start, gap):
         a_list[pos] = current
 
 
-class Node():
+class Node:
     def __init__(self, item):
         self.data = item
         self.next = None
@@ -138,7 +138,7 @@ class Node():
         self.next = item
 
 
-class LinkedList():
+class LinkedList:
     def __init__(self):
         self.head = None
 
@@ -288,7 +288,7 @@ class LinkedList():
         return current.get_data()
 
 
-class PythonicNode():
+class PythonicNode:
     def __init__(self, item):
         self.data = item
         self.next = None
