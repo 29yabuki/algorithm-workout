@@ -295,19 +295,19 @@ class PythonicNode:
     
     @property
     def data(self):
-        return self.data
+        return self._data
     
     @data.setter
     def data(self, item):
-        self.data = item
+        self._data = item
     
     @property
     def next(self):
-        return self.next
+        return self._next
     
     @next.setter
     def next(self, item):
-        self.next = item
+        self._next = item
 
 
 mylist = LinkedList()
