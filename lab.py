@@ -290,8 +290,8 @@ class LinkedList:
 
 class PythonicNode:
     def __init__(self, item):
-        self.data = item
-        self.next = None
+        self._data = item
+        self._next = None
     
     @property
     def data(self):
