@@ -287,6 +287,17 @@ class LinkedList:
         
         return current.get_data()
 
+    # repr(self): prints a representation of the linked list in a Python list format
+    def __repr__(self):
+        a_list = []
+        current = self.head
+        
+        while current != None:
+            a_list.append(current.get_data())
+            current = current.get_next()
+        
+        list_str = (', '.join([str(i) for i in a_list]))
+        return f'[{list_str}]'
 
 class PythonicNode:
     def __init__(self, item):
@@ -314,8 +325,11 @@ mylist = LinkedList()
 mylist.add(3)
 mylist.add(4)
 mylist.add(1)
-print(mylist.index(3))
+print(mylist)
+print("index of 3 in linked list:", mylist.index(3))
 mylist.remove(3)
-print(mylist.size())
-print(mylist.pop())
-print(mylist.size())
+print(mylist)
+print("current size of linked list:", mylist.size())
+print("last value popped:", mylist.pop())
+print("current size of linked list:", mylist.size())
+print(mylist)
