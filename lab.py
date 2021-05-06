@@ -287,7 +287,7 @@ class LinkedList:
         
         return current.get_data()
 
-    # repr(self): prints a representation of the linked list in a Python list format
+    # repr(self): prints a representation of the linked list in a list format
     def __repr__(self):
         a_list = []
         current = self.head
