@@ -299,6 +299,7 @@ class LinkedList:
         list_str = (', '.join([str(i) for i in a_list]))
         return f'[{list_str}]'
 
+
 class PythonicNode:
     def __init__(self, item):
         self._data = item
@@ -321,6 +322,7 @@ class PythonicNode:
         self._next = item
 
 
+# main event loop
 mylist = LinkedList()
 mylist.add(3)
 mylist.add(4)
