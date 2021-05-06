@@ -287,17 +287,6 @@ class LinkedList:
         
         return current.get_data()
 
-    # repr(self): prints a representation of the linked list in a list format
-    def __repr__(self):
-        a_list = []
-        current = self.head
-        
-        while current != None:
-            a_list.append(current.get_data())
-            current = current.get_next()
-        
-        list_str = (', '.join([str(i) for i in a_list]))
-        return f'[{list_str}]'
 
 class PythonicNode:
     def __init__(self, item):
