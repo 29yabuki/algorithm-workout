@@ -10,7 +10,7 @@ def sequential(a_list, item):
     
     return found
 
-
+def
 def ordered_sequential(a_list, item):
     pos = 0
     found = False
