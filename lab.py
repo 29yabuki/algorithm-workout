@@ -296,7 +296,7 @@ class LinkedList:
             a_list.append(current.get_data())
             current = current.get_next()
         
-        list_str = (', '.join([str(i) for i in a_list]))
+        list_str = ', '.join(str(i) for i in a_list)
         return f'[{list_str}]'
 
 
