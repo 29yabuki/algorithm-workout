@@ -270,7 +270,7 @@ class LinkedList:
         
         return current.get_data()
 
-    # poppos(self, pos): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.              
+    # pospop(self, pos): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.              
     def pospop(self, pos=0):
         count = 0
         current = self.head
