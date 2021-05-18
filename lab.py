@@ -209,22 +209,6 @@ class LinkedList:
     def index(self, item):
         count = 0
         current = self.head
-        found = False
-        
-        while current != None and not found:
-            if current.get_data() == item:
-                found = True
-                return count
-            else:
-                count += 1
-                current = current.get_next()
-        
-        return -1
-
-    # index type II          
-    def index(self, item):
-        count = 0
-        current = self.head
         
         while current != None:
             if current.get_data() == item:
@@ -255,23 +239,8 @@ class LinkedList:
         else:
             pass
 
-    # pop(self): removes and returns the last item in the list. It needs nothing and returns an item. Assume the list has at least one item.                                           
-    def pop(self):
-        current = self.head
-        previous = None
-        
-        if current.get_next() == None:
-            self.head = None
-        else:
-            while current.get_next() != None:
-                previous = current
-                current = current.get_next()
-            previous.set_next(None)
-        
-        return current.get_data()
-
-    # pospop(self, pos): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.              
-    def pospop(self, pos=0):
+    # pop(self, pos=0): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.                                            
+    def pop(self, pos=0):
         count = 0
         current = self.head
         previous = None
@@ -286,7 +255,7 @@ class LinkedList:
             previous.set_next(current.get_next())
         
         return current.get_data()
-
+     
     # repr(self): prints a representation of the linked list in a list format
     def __repr__(self):
         a_list = []
