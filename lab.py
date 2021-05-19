@@ -1,3 +1,4 @@
+# Search Functions
 def sequential(a_list, item):
     pos = 0
     found = False
@@ -46,6 +47,7 @@ def binary_search(a_list, item):
     return found
 
 
+# Sort Functions
 def bubble_sort(a_list):
     for pairs in range(len(a_list)-1, 0, -1):
         for i in range(pairs):
@@ -120,6 +122,7 @@ def gap_insertion_sort(a_list, start, gap):
         a_list[pos] = current
 
 
+# Node Class
 class Node:
     def __init__(self, item):
         self.data = item
@@ -138,6 +141,7 @@ class Node:
         self.next = item
 
 
+# Linked List Class
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -269,6 +273,7 @@ class LinkedList:
         return f'[{list_str}]'
 
 
+# Pythonic Node Class
 class PythonicNode:
     def __init__(self, item):
         self._data = item
