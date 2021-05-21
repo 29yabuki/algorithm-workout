@@ -35,14 +35,14 @@ def binary_search(a_list, item):
     found = False
     
     while first <= last and not found:
-        midpoint = (first+last) // 2
-        if a_list[midpoint] == item:
+        midpointpoint = (first+last) // 2
+        if a_list[midpointpoint] == item:
             found = True
         else:
-            if a_list[midpoint] > item:
-                last = midpoint - 1
+            if a_list[midpointpoint] > item:
+                last = midpointpoint - 1
             else:
-                first = midpoint + 1
+                first = midpointpoint + 1
     
     return found
 
@@ -120,3 +120,39 @@ def gap_insertion_sort(a_list, start, gap):
             pos -= gap
         
         a_list[pos] = current
+        
+def mergeSort(a_list):
+    print("Splitting", a_list)
+    
+    if len(a_list) > 1:
+        midpoint = len(a_list) // 2
+        left = a_list[:midpoint]
+        right = a_list[midpoint:]
+
+        mergeSort(left)
+        mergeSort(right)
+
+        i=0
+        j=0
+        k=0
+        
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                a_list[k] = left[i]
+                i=i+1
+            else:
+                a_list[k] = right[j]
+                j=j+1
+            k=k+1
+
+        while i < len(left):
+            a_list[k] = left[i]
+            i=i+1
+            k=k+1
+
+        while j < len(right):
+            a_list[k] = right[j]
+            j=j+1
+            k=k+1
+            
+    print("Merging", a_list)
