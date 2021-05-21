@@ -19,7 +19,7 @@
 ## II. Singly Linked List
 
 ### A. Node <br />
-A Node in a linked list holds the data value and the pointer which points to the location of the next node in the linked list. As the node is a combination of multiple information, hence we will be defining a class for Node which will have a variable to store data and another variable to store the pointer.
+A Node in a linked list holds the data value and the pointer which points to the location of the next node in the linked list. As the node is a combination of multiple information, hence we will be defining a class for Node which will have a variable to store data and another variable to store the pointer. <br />
 ### B. Singly Linked List <br />
 A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 ---
