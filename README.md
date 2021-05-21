@@ -23,8 +23,8 @@ A Node in a linked list holds the data value and the pointer which points to the
 ### B. Singly Linked List
 A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 ---
-[^1]: ### Sources
-https://runestone.academy/runestone/books/published/pythonds/index.html
-https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20
-https://www.geeksforgeeks.org/data-structures/linked-list/
-https://www.studytonight.com/data-structures/linear-linked-list
+[^1]: Sources
+https://runestone.academy/runestone/books/published/pythonds/index.html <br />
+https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20 <br />
+https://www.geeksforgeeks.org/data-structures/linked-list/ <br />
+https://www.studytonight.com/data-structures/linear-linked-list <br />
