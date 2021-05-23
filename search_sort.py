@@ -35,14 +35,14 @@ def binary_search(a_list, item):
     found = False
     
     while first <= last and not found:
-        midpointpoint = (first+last) // 2
-        if a_list[midpointpoint] == item:
+        midpoint = (first+last) // 2
+        if a_list[midpoint] == item:
             found = True
         else:
-            if a_list[midpointpoint] > item:
-                last = midpointpoint - 1
+            if a_list[midpoint] > item:
+                last = midpoint - 1
             else:
-                first = midpointpoint + 1
+                first = midpoint + 1
     
     return found
 
