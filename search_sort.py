@@ -129,10 +129,10 @@ def merge_sort(a_list):
         midpoint = len(a_list) // 2
         left = a_list[:midpoint]
         right = a_list[midpoint:]
-
+        
         merge_sort(left)
         merge_sort(right)
-
+        
         i = 0
         j = 0
         k = 0
@@ -145,15 +145,15 @@ def merge_sort(a_list):
                 a_list[k] = right[j]
                 j += 1
             k += 1
-
+        
         while i < len(left):
             a_list[k] = left[i]
             i += 1
             k += 1
-
+        
         while j < len(right):
             a_list[k] = right[j]
             j += 1
             k += 1
-            
-    print("Merging", a_list)
+    
+    print('Merging', a_list)
