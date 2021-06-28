@@ -50,4 +50,4 @@ https://www.geeksforgeeks.org/data-structures/linked-list/ <br  />
 https://www.studytonight.com/data-structures/linear-linked-list <br  />
 
 ---
-***Thanks for looking!***
+***Thank you***
