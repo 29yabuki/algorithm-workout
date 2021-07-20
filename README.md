@@ -27,6 +27,9 @@ The codes put in this repository are the codes for my daily coding routine.
 
 6. Gap Insertion Sort
 
+7. Merge Sort
+
+
 ## II. Singly Linked List
 
 ### A. Node
