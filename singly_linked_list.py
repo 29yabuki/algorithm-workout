@@ -120,13 +120,18 @@ class LinkedList:
             pass
 
     # pop(self, pos=0): removes and returns the item at position pos. It needs the position and returns the item. Assume the item is in the list.                                            
-    def pop(self, pos=0):
+    def pop(self, pos=-1):
         count = 0
         current = self.head
         previous = None
         
         if pos == 0:
             self.head = current.get_next()
+        elif pos == -1:
+            while current.get_next() != None:
+                previous = current
+                current = current.get_next()
+            previous.set_next(None)
         else:
             while count < pos:
                 count += 1
