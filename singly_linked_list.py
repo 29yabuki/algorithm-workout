@@ -131,7 +131,7 @@ class LinkedList:
             while current.get_next() != None:
                 previous = current
                 current = current.get_next()
-            previous.set_next(None)
+            previous.set_next(current.get_next())
         else:
             while count < pos:
                 count += 1
