@@ -1,4 +1,7 @@
 # Search Functions
+import scipy as sp
+
+
 def sequential(a_list, item):
     pos = 0
     found = False
@@ -157,3 +160,43 @@ def merge_sort(a_list):
             k += 1
     
     print('Merging', a_list)
+
+
+def quick_sort(a_list):
+    quick_sort_helper(a_list, 0, len(a_list)-1)
+
+
+def quick_sort_helper(a_list, first, last):
+    if first < last:
+        split_point = partition(a_list, first, last)
+        
+        quick_sort_helper(a_list, first, split_point-1)
+        quick_sort_helper(a_list, split_point+1, last)
+
+
+def partition(a_list, first, last):
+    pivot = a_list[first]
+    
+    left = first + 1
+    right = last
+    
+    done = False
+    while not done:
+        while left <= right and a_list[left] <= pivot:
+            left += 1
+        
+        while right >= left and a_list[right] >= pivot:
+            right -= 1
+        
+        if right < left:
+            done = True
+        else:
+            temp = a_list[left]
+            a_list[left] = a_list[right]
+            a_list[right] = a_list[left]
+        
+    temp = a_list[first]
+    a_list[first] = a_list[right]
+    a_list[right] = temp
+    
+    return right
