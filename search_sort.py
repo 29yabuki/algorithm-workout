@@ -190,8 +190,8 @@ def partition(a_list, first, last):
         else:
             temp = a_list[left]
             a_list[left] = a_list[right]
-            a_list[right] = a_list[left]
-        
+            a_list[right] = temp
+    
     temp = a_list[first]
     a_list[first] = a_list[right]
     a_list[right] = temp
