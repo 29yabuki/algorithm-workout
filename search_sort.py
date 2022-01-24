@@ -1,7 +1,4 @@
 # Search Functions
-import scipy as sp
-
-
 def sequential(a_list, item):
     pos = 0
     found = False
