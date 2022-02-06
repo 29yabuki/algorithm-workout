@@ -185,7 +185,7 @@ def partition(a_list, first, last):
         while right >= left and a_list[right] >= pivot:
             right -= 1
         
-        if right < left:
+        if left > right:
             done = True
         else:
             temp = a_list[left]
