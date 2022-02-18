@@ -22,6 +22,7 @@ A working version of the following algorithms:
 -  Quick Sort
 
 **C.** Singly Linked List
+
 A **singly linked list** is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 
 The whole linked list file contains the following classes and functions:
@@ -62,10 +63,10 @@ The whole linked list file contains the following classes and functions:
 ## Sources
 A word of thanks to the following sources by establishing themselves as both direct and indirect references for my daily coding routine. Your work will never go unnoticed and is making an impact for aspiring developers such as myself.
 
-https://runestone.academy/runestone/books/published/pythonds/index.html
-https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20 
-https://www.geeksforgeeks.org/data-structures/linked-list/ 
-https://www.studytonight.com/data-structures/linear-linked-list 
+- https://runestone.academy/runestone/books/published/pythonds/index.html
+- https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20 
+- https://www.geeksforgeeks.org/data-structures/linked-list/ 
+- https://www.studytonight.com/data-structures/linear-linked-list 
 
 ## Contributions
 If there are any comment or recommendations, always feel free to implement anything, submit pull requests, create issues, and discuss ideas with me.
