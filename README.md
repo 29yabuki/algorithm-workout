@@ -69,4 +69,4 @@ A word of thanks to the following sources by establishing themselves as both dir
 - https://www.studytonight.com/data-structures/linear-linked-list 
 
 ## Contributions
-If there are any comment or recommendations, always feel free to implement anything, submit pull requests, create issues, and discuss ideas with me.
+If there are any comments or recommendations, always feel free to implement anything, submit pull requests, create issues, and discuss ideas with me.
