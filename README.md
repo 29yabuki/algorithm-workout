@@ -10,7 +10,7 @@ A working version of the following algorithms:
 - Sequential Search
 - Ordered Search
 - Binary Search
- </br>
+
 **B.** Sorting Algorithms
 - Bubble Sort
 - Short Bubble Sort
@@ -20,7 +20,7 @@ A working version of the following algorithms:
 - Gap Insertion Sort
 - Merge Sort
 -  Quick Sort
- </br>
+
 **C.** Singly Linked List
 A **singly linked list** is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 
