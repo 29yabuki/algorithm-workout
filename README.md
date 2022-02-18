@@ -1,8 +1,7 @@
-# <center> Daily Routine </center>
+# <p align="center">Daily Routine</p>
 This is a collection of algorithms that I code daily for two reasons:
 1. To remember the fundamental coding concepts even if I were to go on a slump
 2. To embed rudimentary algorithms used in the studies of data structures and algorithm
-</br>
 
 ## Features
 A working version of the following algorithms:
@@ -11,7 +10,7 @@ A working version of the following algorithms:
 - Sequential Search
 - Ordered Search
 - Binary Search
-
+</br>
 **B.** Sorting Algorithms
 - Bubble Sort
 - Short Bubble Sort
@@ -21,7 +20,7 @@ A working version of the following algorithms:
 - Gap Insertion Sort
 - Merge Sort
 -  Quick Sort
-
+</br>
 **C.** Singly Linked List
 A **singly linked list** is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).
 
@@ -59,8 +58,7 @@ The whole linked list file contains the following classes and functions:
 	- has a default pos value of -1 (to remove the item in the last position)
 - \_\_repr\_\_
 	-  prints a representation of the linked list in a list format
-  </br>
-  
+ 
 ## Sources
 A word of thanks to the following sources by establishing themselves as both direct and indirect references for my daily coding routine. Your work will never go unnoticed and is making an impact for aspiring developers such as myself.
 
