@@ -1,7 +1,7 @@
 # <p align="center">Daily Routine</p>
 This is a collection of algorithms that I code daily for two reasons:
-1. To remember the fundamental coding concepts even if I were to go on a slump
-2. To embed rudimentary algorithms used in the studies of data structures and algorithm
+1. To remember the fundamental coding concepts even if I were to go on a slump.
+2. To embed rudimentary algorithms used in the studies of data structures and algorithm.
 
 ## Features
 A working version of the following algorithms:
