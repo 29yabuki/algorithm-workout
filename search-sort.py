@@ -103,8 +103,8 @@ def shell_sort(a_list):
     slc = len(a_list) // 2
     
     while slc:
-        for startpos in range(slc):
-            gap_insertion_sort(a_list, startpos, slc)
+        for start in range(slc):
+            gap_insertion_sort(a_list, start, slc)
         
         print('After increment of size:', slc, 'The list is:', a_list)
         slc //= 2
