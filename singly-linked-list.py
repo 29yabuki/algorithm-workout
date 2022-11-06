@@ -24,12 +24,12 @@ class LinkedList:
     
     def is_empty(self):
         return self.head == None
-    
+
     def add(self, item):
         temp = Node(item)
         temp.set_next(self.head)
         self.head = temp
-    
+
     def append(self, item):
         current = self.head
         
@@ -40,7 +40,7 @@ class LinkedList:
             current.set_next(Node(item))
         else:
             self.head = Node(item)
-    
+
     def insert(self, pos, item):
         count = 0
         temp = Node(item)
@@ -56,7 +56,7 @@ class LinkedList:
                 current = current.get_next()
             temp.set_next(current)
             previous.set_next(temp)
-    
+
     def size(self):
         count = 0
         current = self.head
@@ -66,7 +66,7 @@ class LinkedList:
             current = current.get_next()
         
         return count
-    
+
     def search(self, item):
         current = self.head
         found = False
@@ -78,7 +78,7 @@ class LinkedList:
                 current = current.get_next()
         
         return found
-    
+
     def index(self, item):
         count = 0
         current = self.head
@@ -91,7 +91,7 @@ class LinkedList:
                 current = current.get_next()
         
         return -1
-    
+
     def remove(self, item):
         current = self.head
         previous = None
@@ -109,7 +109,7 @@ class LinkedList:
                 self.head = current.get_next()
             else:
                 previous.set_next(current.get_next())
-    
+
     def pop(self, pos=-1):
         count = 0
         current = self.head
@@ -130,7 +130,7 @@ class LinkedList:
             previous.set_next(current.get_next())
         
         return current.get_data()
-    
+
     def __repr__(self):
         a_list = []
         current = self.head
