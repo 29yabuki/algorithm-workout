@@ -131,7 +131,7 @@ class LinkedList:
         
         return current.get_data()
 
-    def __repr__(self):
+    def __str__(self):
         a_list = []
         current = self.head
         
@@ -172,10 +172,11 @@ mylist.add(3)
 mylist.add(4)
 mylist.add(1)
 print(mylist)
-print("index of 3 in linked list:", mylist.index(3))
+print(f'The index of 3 in the Linked List: {mylist.index(3)}')
 mylist.remove(3)
 print(mylist)
-print("current size of linked list:", mylist.size())
-print("last value popped:", mylist.pop())
-print("current size of linked list:", mylist.size())
+print(f'Current size of Linked List: {mylist.size()}')
+print(f'Last value popped: {mylist.pop()}')
+print(f'Current size of Linked List: {mylist.size()}')
+mylist.append(9)
 print(mylist)
