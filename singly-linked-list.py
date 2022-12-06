@@ -166,17 +166,21 @@ class PythonicNode:
         self._next = item
 
 
-# main event loop
-mylist = LinkedList()
-mylist.add(3)
-mylist.add(4)
-mylist.add(1)
-print(mylist)
-print(f'The index of 3 in the Linked List: {mylist.index(3)}')
-mylist.remove(3)
-print(mylist)
-print(f'Current size of Linked List: {mylist.size()}')
-print(f'Last value popped: {mylist.pop()}')
-print(f'Current size of Linked List: {mylist.size()}')
-mylist.append(9)
-print(mylist)
+def main():
+    mylist = LinkedList()
+    mylist.add(3)
+    mylist.add(4)
+    mylist.add(1)
+    print(mylist)
+    print(f'The index of 3 in the Linked List: {mylist.index(3)}')
+    mylist.remove(3)
+    print(mylist)
+    print(f'Current size of Linked List: {mylist.size()}')
+    print(f'Last value popped: {mylist.pop()}')
+    print(f'Current size of Linked List: {mylist.size()}')
+    mylist.append(9)
+    print(mylist)
+
+
+if __name__ == '__main__':
+    main()
