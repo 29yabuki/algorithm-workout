@@ -22,6 +22,7 @@ Each day, you choose a module from the repository while ensuring it is different
 
 ## Implementation Timeline
 
+The following modules will be implemented in the near future:
 - [x] search_sort_algorithms.py
 - [x] linked_list.py
 - [ ] linear_ds.py
