@@ -1,5 +1,4 @@
-# Search Functions
-def sequential(a_list, item):
+def sequential_search(a_list, item):
     pos = 0
     found = False
     
@@ -12,7 +11,7 @@ def sequential(a_list, item):
     return found
 
 
-def ordered_sequential(a_list, item):
+def ordered_sequential_search(a_list, item):
     pos = 0
     found = False
     stop = False
@@ -47,7 +46,6 @@ def binary_search(a_list, item):
     return found
 
 
-# Sort Functions
 def bubble_sort(a_list):
     for pairs in range(len(a_list)-1, 0, -1):
         for i in range(pairs):
