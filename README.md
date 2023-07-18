@@ -16,9 +16,9 @@ Because of that nature, it is named as "Algorithm Workout".  Instead of practici
 
 As part of the Algorithm Workout, a module is selected daily from the repository. 
 
-Just as a well-rounded workout routine avoids targeting the same muscle groups on consecutive days, the Algorithm Workout follows a similar principle. 
-
 Each day, you choose a module from the repository while ensuring it is different from the one coded the previous day. This approach promotes a diverse and comprehensive coding practice, allowing you to exercise various algorithmic skills without redundancy.
+
+Just as a well-rounded workout routine avoids targeting the same muscle groups on consecutive days, the Algorithm Workout follows a similar principle. 
 
 ## Implementation Timeline
 
