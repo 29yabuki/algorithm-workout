@@ -1,4 +1,3 @@
-# Node Class
 class Node:
     def __init__(self, item):
         self.data = item
@@ -17,7 +16,6 @@ class Node:
         self.next = item
 
 
-# Linked List Class
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -117,12 +115,9 @@ class LinkedList:
         
         if pos == 0:
             self.head = current.get_next()
-        elif pos == -1:
-            while current.get_next() != None:
-                previous = current
-                current = current.get_next()
-            previous.set_next(current.get_next())
         else:
+            if pos < 0:
+                pos = self.size() + pos
             while count < pos:
                 count += 1
                 previous = current
@@ -130,7 +125,7 @@ class LinkedList:
             previous.set_next(current.get_next())
         
         return current.get_data()
-
+    
     def __str__(self):
         a_list = []
         current = self.head
@@ -143,7 +138,6 @@ class LinkedList:
         return f'[{list_str}]'
 
 
-# Pythonic Node Class
 class PythonicNode:
     def __init__(self, item):
         self._data = item
@@ -172,12 +166,12 @@ def main():
     mylist.add(4)
     mylist.add(1)
     print(mylist)
-    print(f'The index of 3 in the Linked List: {mylist.index(3)}')
+    print(f'Index of 3: {mylist.index(3)}')
     mylist.remove(3)
     print(mylist)
-    print(f'Current size of Linked List: {mylist.size()}')
-    print(f'Last value popped: {mylist.pop()}')
-    print(f'Current size of Linked List: {mylist.size()}')
+    print(f'Size: {mylist.size()}')
+    print(f'Popped Value: {mylist.pop()}')
+    print(f'Size: {mylist.size()}')
     mylist.append(9)
     print(mylist)
 
