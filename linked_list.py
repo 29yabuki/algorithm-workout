@@ -125,7 +125,7 @@ class LinkedList:
             previous.set_next(current.get_next())
         
         return current.get_data()
-    
+
     def __str__(self):
         a_list = []
         current = self.head
