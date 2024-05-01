@@ -25,7 +25,7 @@ Just as a well-rounded workout routine avoids targeting the same muscle groups o
 The following modules will be implemented in the near future:
 - [x] search_sort_algorithms.py
 - [x] linked_list.py
-- [ ] data_strucs.py
+- [x] data_strucs.py
 - [ ] graph.py
 - [ ] graph_traversal.py
 - [ ] shortest_path.py
