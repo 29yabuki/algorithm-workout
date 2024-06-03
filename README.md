@@ -26,11 +26,15 @@ The following modules will be implemented in the near future:
 - [x] search_sort_algorithms.py
 - [x] singly_linked_list.py
 - [x] data_strucs.py
+- [x] trees.py
+- [ ] search_trees.py
 - [ ] graph.py
 - [ ] graph_traversal.py
 - [ ] shortest_path.py
 - [ ] mst.py
 - [ ] disjoint_sets.py
+
+Moreover, a seperate and more detailed repository of algorithms will be created for C++.
 
 ## Sources
 1. [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/ns/books/published/pythonds/index.html) by Brad Miller and David Ranum, Luther College.
