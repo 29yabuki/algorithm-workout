@@ -160,7 +160,7 @@ class PythonicNode:
         self._next = item
 
 
-def main():
+if __name__ == '__main__':
     mylist = LinkedList()
     mylist.add(3)
     mylist.add(4)
@@ -174,7 +174,3 @@ def main():
     print(f'Size: {mylist.size()}')
     mylist.append(9)
     print(mylist)
-
-
-if __name__ == '__main__':
-    main()
