@@ -76,10 +76,16 @@ def printexp(tree):
     if tree:
         string_val = '(' + printexp(tree.get_left_child())
         string_val = string_val + str(tree.get_root_val())
-        string_val = string_val + printexp(tree.get_right_child())+')'
+        string_val = string_val + printexp(tree.get_right_child()) + ')'
     
     return string_val
-
+def printexp(tree):
+    string_val = ""
+    
+    if tree:
+        string_val = '()' + printexp(tree.get_left_child())
+        string_val = string_val + str(tree.get_root_val())
+        string_val = string_val + printexp(tree.get_right_child()) + ')'
 
 class BinaryHeap:
     def __init__(self):
