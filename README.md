@@ -26,8 +26,9 @@ The following modules will be implemented in the near future:
 - [x] search_sort_algorithms.py
 - [x] singly_linked_list.py
 - [x] data_strucs.py
-- [x] trees.py
-- [ ] search_trees.py
+- [x] tree.py
+- [x] heap.py
+- [ ] search_tree.py
 - [ ] graph.py
 - [ ] graph_traversal.py
 - [ ] shortest_path.py
