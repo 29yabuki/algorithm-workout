@@ -1,5 +1,3 @@
-import operator
-
 class BinaryHeap:
     def __init__(self):
         self.heap_list = [0]
@@ -35,7 +33,7 @@ class BinaryHeap:
                 return i * 2
             else:
                 return i * 2 + 1
-    
+
     def del_min(self):
         retval = self.heap_list[1]
         self.heap_list[1] = self.heap_list[self.curr_size]
