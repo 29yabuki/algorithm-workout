@@ -1,3 +1,5 @@
+import operator
+
 class BinaryTree:
     def __init__(self, root_obj):
         self.key = root_obj
