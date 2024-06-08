@@ -40,16 +40,18 @@ class BinaryHeap:
         self.curr_size = self.curr_size - 1
         self.heap_list.pop()
         self.perc_down(1)
+        
         return retval
     
     def build_heap(self, a_list):
         i = len(a_list) // 2
         self.curr_size = len(a_list)
-        self.heap_list = [0] +  a_list[:]
-        while (i > 0):
+        self.heap_list = [0] + a_list[:]
+        
+        while i > 0:
             self.perc_down(i)
             i -= 1
-
+    
 
 if __name__ == '__main__':
     bh = BinaryHeap()
