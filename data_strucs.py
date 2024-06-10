@@ -66,10 +66,10 @@ class HashTable:
     
     def hash_func(self, key, size):
         return key % size
-
+    
     def rehash(self, old, size):
         return (old + 1) % size
-
+    
     def put(self, key, data):
         hash_value = self.hash_func(key, len(self.slots))
         
@@ -109,9 +109,9 @@ class HashTable:
                 stop = True
         
         return data
-
+    
     def __getitem__(self, key):
         return self.get(key)
-
+    
     def __setitem__(self, key, data):
         self.put(key, data)
