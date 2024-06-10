@@ -6,6 +6,12 @@ class BinaryTree:
         self.left_child = None
         self.right_child = None
     
+    def get_left_child(self):
+        return self.left_child
+    
+    def get_right_child(self):
+        return self.right_child
+    
     def insert_left(self, new_node):
         if self.left_child == None:
             self.left_child = BinaryTree(new_node)
@@ -21,12 +27,6 @@ class BinaryTree:
             t = BinaryTree(new_node)
             t.right_child = self.right_child
             self.right_child = t
-    
-    def get_right_child(self):
-        return self.right_child
-    
-    def get_left_child(self):
-        return self.left_child
     
     def set_root_val(self, obj):
         self.key = obj
