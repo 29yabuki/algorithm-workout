@@ -9,7 +9,7 @@ class BinaryHeap:
                 temp = self.heap_list[i // 2]
                 self.heap_list[i // 2] = self.heap_list[i]
                 self.heap_list[i] = temp
-            i = i // 2
+            i //= 2
     
     def perc_down(self, i):
         while (i * 2) <= self.curr_size:
@@ -33,7 +33,7 @@ class BinaryHeap:
                 return i * 2
             else:
                 return i * 2 + 1
-
+    
     def del_min(self):
         retval = self.heap_list[1]
         self.heap_list[1] = self.heap_list[self.curr_size]
@@ -51,7 +51,7 @@ class BinaryHeap:
         while i > 0:
             self.perc_down(i)
             i -= 1
-    
+
 
 if __name__ == '__main__':
     bh = BinaryHeap()
