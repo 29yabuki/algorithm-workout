@@ -81,15 +81,15 @@ class HashTable:
                 self.data[hash_value] = data
             else:
                 next_slot = self.rehash(hash_value, len(self.slots))
-            
-            while self.slots[next_slot] != None and self.slots[next_slot] != key:
-                next_slot = self.rehash(next_slot, len(self.slots))
-            
-            if self.slots[next_slot] == None:
-                self.slots[next_slot] = key
-                self.data[next_slot] = data
-            else:
-                self.data[next_slot] = data
+                
+                while self.slots[next_slot] != None and self.slots[next_slot] != key:
+                    next_slot = self.rehash(next_slot, len(self.slots))
+                
+                if self.slots[next_slot] == None:
+                    self.slots[next_slot] = key
+                    self.data[next_slot] = data
+                else:
+                    self.data[next_slot] = data
     
     def get(self, key):
         start_slot = self.hash_func(key, len(self.slots))
