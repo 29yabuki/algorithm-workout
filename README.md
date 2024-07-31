@@ -1,4 +1,4 @@
-# <p align="center">Algorithm Workout</p>
+# Algorithm Workout
 
 This repository contains several data structures and algorithms meant for its implementation to be second nature. A module is to be chosen daily and coded exactly like in the source code.
 
